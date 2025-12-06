@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(10px) brightness(40%);
+    height: 100%;
+    width: 100%;
+    gap: 100px;
+    color: white;
+    font-style: white;
+    font-family: 'calibri';
+    font-size: 2rem;
+    z-index: inherit;
+}
+.inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 50%;
+}
+
+.main {
+    width: 40%;
+    text-align: center;
+}
+
+.inside hr {
+    width: 30%;
+}
+
+.inside button {
+    background-color: green;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 70%;
+    border-radius: 5px;
+}
+
+.inside button:hover {
+    cursor:pointer;
+    background-color: darkgreen;
+}
+

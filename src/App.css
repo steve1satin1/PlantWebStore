@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#root {
+  background-image: url("../public/mainPage_background.jpg");
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  max-width: 100vw;
+}
