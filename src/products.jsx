@@ -3,7 +3,6 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { openMenu, openCart } from "./menuSlice";
 import { addItem } from "./cartSlice";
-import Cart from "./cart";
 
 export default function Products() {
   const productsList = useSelector((state) => state.products);
