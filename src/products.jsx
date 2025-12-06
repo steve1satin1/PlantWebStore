@@ -33,7 +33,7 @@ export default function Products() {
           <h1>Plants</h1>
         </div>
         <div className="cart-container" onClick={() => dispatch(openCart())}>
-          <img src="../public/cart.png" alt="cart" />
+          <img src="cart.png" alt="cart" />
           <h4>{cartItemsQuantity}</h4>
         </div>
       </navbar>
