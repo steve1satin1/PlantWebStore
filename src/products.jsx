@@ -3,6 +3,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { openMenu, openCart } from "./menuSlice";
 import { addItem } from "./cartSlice";
+import Cart from "./cart";
 
 export default function Products() {
   const productsList = useSelector((state) => state.products);
@@ -37,8 +38,11 @@ export default function Products() {
         </div>
       </navbar>
       <Cart />
-      {plantsCatgories.map((curr_categorie) => (
-        <div className={`products-list ${cartState ? "closed" : ""}`}>
+      {plantsCatgories.map((curr_categorie, index) => (
+        <div
+          className={`products-list ${cartState ? "closed" : ""}`}
+          key={index}
+        >
           <h1>{curr_categorie}</h1>
 
           {productsList
