@@ -1,6 +1,6 @@
 {
   "name": "plantwebstore",
-  "private": true,
+  "homepage": "https://steve1satin1.github.io/PlantWebStore",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
