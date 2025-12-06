@@ -23,7 +23,7 @@ export default function Products() {
     <div className={`products-frame ${menuState ? "" : "closed"}`}>
       <navbar className="products-navbar">
         <div className="home-page" onClick={() => dispatch(openMenu())}>
-          <img src="../public/logo.jpg" className="logo" alt="logo image" />
+          <img src="logo.jpg" className="logo" alt="logo image" />
           <div>
             <h1>Paradise Nursey</h1>
             <p>Where green meets serenity</p>
@@ -49,7 +49,7 @@ export default function Products() {
             .map((item) => (
               <div className="item-card" key={item.id}>
                 <h3>{item.name}</h3>
-                <br />
+
                 <img src={item.imageUrl} className="card-image" />
                 <p>{item.description}</p>
                 <p>${item.price}</p>
